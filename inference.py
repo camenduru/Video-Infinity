@@ -21,7 +21,7 @@ def parse_args():
 
 def init_pipeline(config):
     pipe = VideoCrafterPipeline.from_pretrained(
-        'adamdad/videocrafterv2_diffusers',
+        'vdo/videocrafterv2_diffusers',
         torch_dtype=torch.float16
     )
     pipe.enable_model_cpu_offload(
